@@ -1,0 +1,154 @@
+
+(rules PCB motherboard
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 41)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule In1.Cu
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule In2.Cu
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 203.2)
+    (clear 203.2)
+    (clear 101.6 (type smd_to_turn_gap))
+  )
+  (padstack "Via[0-3]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
+  )
+  (via 
+    "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_800:400_um-POWER" "Via[0-3]_800:400_um" POWER
+  )
+  (via_rule
+    default "Via[0-3]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_800:400_um-kicad_default"
+  )
+  (via_rule
+    POWER "Via[0-3]_800:400_um-POWER"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 203.2)
+    )
+    (layer_rule In1.Cu
+      (rule 
+        (width 0.0) 
+      )
+    )
+    (layer_rule In2.Cu
+      (rule 
+        (width 0.0) 
+      )
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    VBUS /AM16 /AM20 /AM15 /AM21 /AM19 /AM17 /AM18
+    /AM22 /D6 "/Address-Logic/BA" "/Expansion Ports/~{BREQ}" "/Expansion Ports/~{RST}" "/Expansion Ports/BAVAIL" "/Address-Logic/BS" /D2
+    "/CPU_MEM/MRDY" "/PS-2/PS2_M_DATA" "unconnected-(J1-Pad2)" "unconnected-(J2-Pad2)" "/PS-2/PS2_M_CLK" "unconnected-(J2-Pad6)" "unconnected-(U2-NC-Pad26)" "unconnected-(J3-Pad6)"
+    "/CPU_MEM/~{NMI}" "/CPU_MEM/~{IRQ}" "/CPU_MEM/~{FIRQ}" /D0 /D3 "unconnected-(U1-~{HALT}-Pad40)" /D1 /D7
+    "/Address-Logic/Q" "unconnected-(U2-~{WE}-Pad27)" "/Address-Logic/R{slash}~{W}" /D4 /D5 "/Address-Logic/~{ROM_EN}" "/Address-Logic/~{RAML_EN}" "/Address-Logic/~{RAMH_EN}"
+    "Net-(U6-Pad2)" "unconnected-(U6-Pad6)" "unconnected-(J1-Pad6)" "Net-(U6-Pad11)" "/PS-2/PS2_KB_DATA" "/PS-2/PS2_KB_CLK" "unconnected-(J3-Pad1)" "unconnected-(J3-Pad4)"
+    "unconnected-(J3-Pad7)" "unconnected-(J3-Pad8)" "unconnected-(J3-Pad9)" "Net-(J4-D-)" "Net-(J4-D+)" "Net-(U13-OE)" "Net-(U11-SER)" "Net-(U12-QC)"
+    "Net-(U11-SRCLK)" "unconnected-(U11-QB-Pad1)" "Net-(U11-QC)" "Net-(U11-QD)" "Net-(U11-QE)" "Net-(U11-QF)" "Net-(U11-QG)" "Net-(U11-QH)"
+    "Net-(U11-QH')" "unconnected-(U11-QA-Pad15)" "Net-(U12-QB)" "unconnected-(U12-QD-Pad3)" "unconnected-(U12-QE-Pad4)" "unconnected-(U12-QF-Pad5)" "unconnected-(U12-QG-Pad6)" "unconnected-(U12-QH-Pad7)"
+    "unconnected-(U12-QH'-Pad9)" "Net-(U12-QA)" "unconnected-(U15-GP0-Pad2)" "unconnected-(U15-GP1-Pad3)" "unconnected-(U15-GP2-Pad7)" "unconnected-(U15-GP3-Pad8)" "unconnected-(U15-SDA-Pad9)" "unconnected-(U15-SCL-Pad10)"
+    "Net-(U5-Pad3)" "Net-(U10-OE)" "Net-(U5-Pad10)" "unconnected-(U5-Pad11)" "Net-(U7-SER)" "Net-(U10-Load)" "Net-(U7-SRCLK)" "unconnected-(U7-QB-Pad1)"
+    "Net-(U10-D7)" "Net-(U10-D6)" "Net-(U10-D5)" "Net-(U10-D4)" "Net-(U10-D3)" "Net-(U10-D2)" "Net-(U7-QH')" "unconnected-(U7-QA-Pad15)"
+    "Net-(U10-D0)" "unconnected-(U8-QD-Pad3)" "unconnected-(U8-QE-Pad4)" "unconnected-(U8-QF-Pad5)" "unconnected-(U8-QG-Pad6)" "unconnected-(U8-QH-Pad7)" "unconnected-(U8-QH'-Pad9)" "Net-(U10-D1)"
+    "Net-(U9-Pad11)" "/Address-Logic/~{IO_EN}" "/Address-Logic/~{IO15_EN}" "/Address-Logic/~{IO14_EN}" "/Address-Logic/~{IO13_EN}" "/Address-Logic/~{IO12_EN}" "/Address-Logic/~{IO11_EN}" "/Address-Logic/~{IO10_EN}"
+    "/Address-Logic/~{IO9_EN}" "/Address-Logic/~{IO8_EN}" "/Address-Logic/~{PAR_EN}" "/Address-Logic/~{SER_EN}" "/Address-Logic/~{PS2_EN}" "/Address-Logic/~{VDC_EN}" "/Address-Logic/~{SNDR_EN}" "/Address-Logic/~{SNDL_EN}"
+    "/Address-Logic/~{MEM_EN}" "/Address-Logic/~{IRQ_EN}" "Net-(U9-Pad5)" "Net-(Q1-C)" "Net-(Q1-B)" "Net-(U15-URx)" "Net-(U15-UTx)" "Net-(U17-S2)"
+    "Net-(U17-S1)" "Net-(U17-S0)" "Net-(U17-GS)" "Net-(U17-EO)" "Net-(U18-S2)" "Net-(U18-S1)" "Net-(U18-S0)" "unconnected-(U18-IO-Pad10)"
+    "unconnected-(U18-GS-Pad14)" "unconnected-(U18-EO-Pad15)" "Net-(U24-B3)" "Net-(U24-B0)" "Net-(U24-B1)" "Net-(U24-B2)" "unconnected-(U24-Oa>b-Pad5)" "unconnected-(U24-Oa=b-Pad6)"
+    "Net-(U24-A0)" "Net-(U24-A1)" "Net-(U24-A2)" "Net-(U24-A3)" "Net-(U25-Cp)" "unconnected-(U26-D4-Pad6)" "unconnected-(U26-D5-Pad7)" "unconnected-(U26-D6-Pad8)"
+    "unconnected-(U26-D7-Pad9)" "Net-(U26-Cp)" "unconnected-(U26-Q7-Pad12)" "unconnected-(U26-Q6-Pad13)" "unconnected-(U26-Q5-Pad14)" "unconnected-(U26-Q4-Pad15)" "unconnected-(U28-PA5-Pad7)" "unconnected-(U28-PA6-Pad8)"
+    "unconnected-(U28-PA7-Pad9)" "unconnected-(U28-PB5-Pad15)" "unconnected-(U28-PB6-Pad16)" "unconnected-(U28-PB7-Pad17)" "unconnected-(U28-CB1-Pad18)" "unconnected-(U28-CB2-Pad19)" "unconnected-(U28-CA2-Pad39)" "unconnected-(U28-CA1-Pad40)"
+    "Net-(U30-VS+)" "Net-(U30-VS-)" "Net-(U30-C2+)" "Net-(U30-C2-)" "Net-(U30-C1+)" "Net-(U30-C1-)" "Net-(U30-T1OUT)" "Net-(U30-R1IN)"
+    "unconnected-(U30-T2OUT-Pad7)" "unconnected-(U30-R2IN-Pad8)" "unconnected-(U30-R2OUT-Pad9)" "unconnected-(U30-T2IN-Pad10)" "Net-(J7-Pin_3)" "Net-(J7-Pin_4)" "Net-(J7-Pin_5)" "Net-(J7-Pin_6)"
+    "unconnected-(J7-Pin_7-Pad7)" "unconnected-(J7-Pin_8-Pad8)" "unconnected-(J7-Pin_9-Pad9)" "unconnected-(J7-Pin_10-Pad10)" "Net-(J7-Pin_11)" "Net-(J7-Pin_12)" "Net-(J7-Pin_13)" "Net-(J7-Pin_14)"
+    "Net-(J7-Pin_16)" "Net-(U31-OP3)" "Net-(U30-T1IN)" "Net-(U30-R1OUT)" "unconnected-(U31-IP3-Pad2)" "unconnected-(U31-IP1-Pad4)" "unconnected-(U31-IP0-Pad7)" "unconnected-(U31-DTACKN-Pad9)"
+    "unconnected-(U31-IP2-Pad36)" "unconnected-(U31-IP5-Pad38)" "unconnected-(U31-IP4-Pad39)" "Net-(U25-OE)" "unconnected-(U14-Pad13)" "Net-(U28-PA0)" "Net-(U28-PA1)" "Net-(U28-PA2)"
+    "Net-(U28-PA3)" "unconnected-(J9-Pad5)" "Net-(U28-PA4)" "unconnected-(J9-Pad9)" "Net-(U28-PB0)" "Net-(U28-PB1)" "Net-(U28-PB2)" "Net-(U28-PB3)"
+    "unconnected-(J10-Pad5)" "Net-(U28-PB4)" "unconnected-(J10-Pad9)" "unconnected-(J5-Pin_6-Pad6)" "/Expansion Ports/A4 " "unconnected-(J6-Pin_6-Pad6)" "unconnected-(J6-Pin_7-Pad7)" "unconnected-(J8-Pin_6-Pad6)"
+    "/Expansion Ports/E" "/Address-Logic/~{WR} " "unconnected-(U22-IO5-Pad15)" "unconnected-(U22-IO6-Pad14)" "unconnected-(U22-IO4-Pad16)" "unconnected-(U22-I8-Pad8)" "unconnected-(U22-IO7-Pad13)" "unconnected-(U22-I7-Pad7)"
+    ~{RD}' "unconnected-(U22-I6-Pad6)" "MEMH_EN" "MEML_EN" "~{A15} " "unconnected-(U29-IO9-Pad15)" "unconnected-(RN1-R1-Pad2)" "Net-(U31-X1{slash}CLK)"
+    "Net-(U31-X2)" "Net-(U31-IACKN)" "Net-(U1-XTAL)" "Net-(U1-EXTAL)" "/Expansion Ports/AM14" "/Expansion Ports/~{RD}" "/Expansion Ports/~{RAMX_EN}" "/~{IRQ_0}"
+    "/~{IRQ_8}" "/~{IRQ_14}" "/~{IRQ_11}" "/~{IRQ_9}" "/~{IRQ_10}" "/~{IRQ_12}" "/~{IRQ_13}" "/~{IRQ_1}"
+    "/~{IRQ_5}" "/~{IRQ_6}" "/~{IRQ_4}" "/~{IRQ_2}" "/~{IRQ_3}" "/~{IRQ_7}" /A1 /A3
+    /A6 /A12 /A15 /A14 /A13 /A7 /A5 /A0
+    /A8 /A10 /A2 /A4 /A11 /A9
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class POWER
+    GND VCC
+    (clearance_class POWER)
+    (via_rule POWER)
+    (rule
+      (width 304.8)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
