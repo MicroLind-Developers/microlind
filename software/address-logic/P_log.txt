@@ -1,0 +1,9 @@
+
+APP Version : 12.63   Model : TL866II Plus
+     Device : AT28C64
+Pins Detected Passed!
+Erase  ...Succeeded. Time : 0.016 S
+Programming FLASH ...Succeeded. Time : 9391ms
+Verifying FLASH ...
+ERROR!   FLASH Address:0x000001    Buf_Val:0x12    IC_Val:0xFF 
+Programming  ...Failed 

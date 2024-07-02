@@ -1,0 +1,20 @@
+GAL22V10
+PROTOADDR
+
+E      Q      RW     A10    A11    A12    A13    A14    A15    NC     NC     GND
+NC     NC     SPARE3 RD     WR     IOEN   RAMEN  ROMEN  SPARE2 SPARE1 SPARE0 VCC
+
+/RD = RW & E + RW & Q
+
+/WR = /RW & E + /RW & Q
+
+
+/IOEN = A12 & A13 & A14 & A15 & /A10 & /A11
+
+/RAMEN = /A15
+
+/ROMEN = A15
+
+
+DESCRIPTION
+The bla bla

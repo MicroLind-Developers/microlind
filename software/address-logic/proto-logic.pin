@@ -1,0 +1,29 @@
+
+
+ Pin # | Name     | Pin Type
+-----------------------------
+   1   | E        | Clock/Input
+   2   | Q        | Input
+   3   | RW       | Input
+   4   | A10      | Input
+   5   | A11      | Input
+   6   | A12      | Input
+   7   | A13      | Input
+   8   | A14      | Input
+   9   | A15      | Input
+  10   | NC       | Input
+  11   | NC       | Input
+  12   | GND      | GND
+  13   | NC       | Input
+  14   | NC       | NC
+  15   | SPARE3   | NC
+  16   | RD       | Output
+  17   | WR       | Output
+  18   | IOEN     | Output
+  19   | RAMEN    | Output
+  20   | ROMEN    | Output
+  21   | SPARE2   | NC
+  22   | SPARE1   | NC
+  23   | SPARE0   | NC
+  24   | VCC      | VCC
+

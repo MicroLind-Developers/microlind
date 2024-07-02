@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "RTC-Z80")(type "KiCad")(uri "D:/Data/KiCad/RTC-Z80")(options "")(descr ""))
+)
