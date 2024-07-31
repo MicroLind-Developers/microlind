@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "StepUp")(type "KiCad")(uri "${KIPRJMOD}/StepUp.kicad_sym")(options "")(descr ""))
-)

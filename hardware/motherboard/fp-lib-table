@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "kicad-lib")(type "KiCad")(uri "D:/Repos/microLind/kicad-lib")(options "")(descr ""))
-)

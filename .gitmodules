@@ -1,0 +1,9 @@
+[submodule "microLind-hw"]
+	path = microLind-hw
+	url = https://github.com/sperly/microLind-hw.git
+[submodule "microLind-fw"]
+	path = microLind-fw
+	url = https://github.com/sperly/microLind-fw.git
+[submodule "microLind-builder"]
+	path = microLind-builder
+	url = https://github.com/sperly/microLind-builder.git

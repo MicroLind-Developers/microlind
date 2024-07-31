@@ -1,5 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "motherboard")(type "KiCad")(uri "D:/Repos/microLind/hardware/motherboard")(options "")(descr ""))
-  (lib (name "RTC-Z80")(type "KiCad")(uri "D:/Data/KiCad/RTC-Z80.pretty")(options "")(descr ""))
-)
