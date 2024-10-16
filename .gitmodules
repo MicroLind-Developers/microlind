@@ -1,11 +1,11 @@
-[submodule "microLind-hw"]
-	path = microLind-hw
+[submodule "microlind-hw"]
+	path = microlind-hw
 	url = https://github.com/sperly/microLind-hw.git
-[submodule "microLind-fw"]
-	path = microLind-fw
+[submodule "microlind-fw"]
+	path = microlind-fw
 	url = https://github.com/sperly/microLind-fw.git
-[submodule "microLind-builder"]
-	path = microLind-builder
+[submodule "microlind-builder"]
+	path = microlind-builder
 	url = https://github.com/sperly/microLind-builder.git
 [submodule "microlind-sw"]
 	path = microlind-sw
