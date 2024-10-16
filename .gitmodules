@@ -9,4 +9,4 @@
 	url = https://github.com/sperly/microLind-builder.git
 [submodule "microlind-sw"]
 	path = microlind-sw
-	url = git@github.com:sperly/microlind-sw.git
+	url = https://github.com/sperly/microlind-sw.git
