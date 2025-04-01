@@ -1,0 +1,3 @@
+* Inverted RW should not be inverted, causing U6 buffer to not let signals from BUS thru to CPU and vice versa.
+
+* Bus trancevers need to be controlled by BA to enable DMA stuff, since the processor does not need to be on the bus during transfers.
