@@ -10,3 +10,6 @@
 [submodule "microlind-sw"]
 	path = microlind-sw
 	url = https://github.com/MicroLind-Developers/microlind-sw.git
+[submodule "usim_6309"]
+	path = usim_6309
+	url = https://github.com/MicroLind-Developers/usim_6309.git
