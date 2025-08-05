@@ -1,7 +1,7 @@
 (footprint "2xPS2-Mini-Din"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 1.5 0)
@@ -20,19 +20,6 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "f61f83e0-2540-4a48-981a-2c83f6c66920")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 2 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "cadbc8c2-3183-4d7d-8bff-e82110f55f79")
 		(effects
 			(font
 				(size 1 1)
@@ -223,14 +210,6 @@
 		)
 	)
 	(pad "1" thru_hole circle
-		(at -1.3 -15.6 180)
-		(size 1.8 1.8)
-		(drill 1.1)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "398067dc-e2c8-4dd5-9bc6-3f40231fdd79")
-	)
-	(pad "2" thru_hole circle
 		(at 1.3 -15.6 180)
 		(size 1.8 1.8)
 		(drill 1.1)
@@ -238,15 +217,15 @@
 		(remove_unused_layers no)
 		(uuid "c675b778-d8cd-4341-b84d-e979d0fe4e13")
 	)
-	(pad "3" thru_hole circle
-		(at -3.4 -15.6 180)
+	(pad "2" thru_hole circle
+		(at -1.3 -15.6 180)
 		(size 1.8 1.8)
 		(drill 1.1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "1149b188-a2f7-42f7-87cd-836b738be284")
+		(uuid "398067dc-e2c8-4dd5-9bc6-3f40231fdd79")
 	)
-	(pad "4" thru_hole circle
+	(pad "3" thru_hole circle
 		(at 3.4 -15.6 180)
 		(size 1.8 1.8)
 		(drill 1.1)
@@ -254,15 +233,15 @@
 		(remove_unused_layers no)
 		(uuid "00eb8074-0e84-4a08-9b20-3ef2e02bb06c")
 	)
-	(pad "5" thru_hole circle
-		(at -3.4 -18.1 180)
+	(pad "4" thru_hole circle
+		(at -3.4 -15.6 180)
 		(size 1.8 1.8)
 		(drill 1.1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "2dd85c21-86d6-46b0-ab6b-5306b4a3ae8f")
+		(uuid "1149b188-a2f7-42f7-87cd-836b738be284")
 	)
-	(pad "6" thru_hole circle
+	(pad "5" thru_hole circle
 		(at 3.4 -18.1 180)
 		(size 1.8 1.8)
 		(drill 1.1)
@@ -270,15 +249,15 @@
 		(remove_unused_layers no)
 		(uuid "0183bce4-7594-44af-859e-5f997f7630e0")
 	)
-	(pad "7" thru_hole circle
-		(at -1.3 -8.5 180)
+	(pad "6" thru_hole circle
+		(at -3.4 -18.1 180)
 		(size 1.8 1.8)
 		(drill 1.1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "cc35c2e6-c200-44b2-a15b-98de9d3cc82d")
+		(uuid "2dd85c21-86d6-46b0-ab6b-5306b4a3ae8f")
 	)
-	(pad "8" thru_hole circle
+	(pad "7" thru_hole circle
 		(at 1.3 -8.5 180)
 		(size 1.8 1.8)
 		(drill 1.1)
@@ -286,15 +265,15 @@
 		(remove_unused_layers no)
 		(uuid "5cab4c8c-24ee-4e58-9079-c115dc7e7249")
 	)
-	(pad "9" thru_hole circle
-		(at -3.4 -8.5 180)
+	(pad "8" thru_hole circle
+		(at -1.3 -8.5 180)
 		(size 1.8 1.8)
 		(drill 1.1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "81ce4420-76a3-4208-a378-24da08e08c71")
+		(uuid "cc35c2e6-c200-44b2-a15b-98de9d3cc82d")
 	)
-	(pad "10" thru_hole circle
+	(pad "9" thru_hole circle
 		(at 3.4 -8.5 180)
 		(size 1.8 1.8)
 		(drill 1.1)
@@ -302,21 +281,29 @@
 		(remove_unused_layers no)
 		(uuid "9c456e21-ce67-4254-a0e1-1adb6a8cc6c5")
 	)
-	(pad "11" thru_hole circle
-		(at -3.4 -11 180)
+	(pad "10" thru_hole circle
+		(at -3.4 -8.5 180)
 		(size 1.8 1.8)
 		(drill 1.1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "6fd39d54-9614-4905-b0b1-f7c9e4eb6c1b")
+		(uuid "81ce4420-76a3-4208-a378-24da08e08c71")
 	)
-	(pad "12" thru_hole circle
+	(pad "11" thru_hole circle
 		(at 3.4 -11 180)
 		(size 1.8 1.8)
 		(drill 1.1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "f6982003-3b12-4946-8e6e-044bf2e6fc43")
+	)
+	(pad "12" thru_hole circle
+		(at -3.4 -11 180)
+		(size 1.8 1.8)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6fd39d54-9614-4905-b0b1-f7c9e4eb6c1b")
 	)
 	(pad "G" thru_hole circle
 		(at -6.8 -15.57)
@@ -358,18 +345,5 @@
 		(remove_unused_layers no)
 		(uuid "837bbe87-ebb9-4ec9-8cc6-844105b55c21")
 	)
-	(group ""
-		(uuid "3e3cdc82-6e0a-41ba-88da-21ddeee83f47")
-		(members "5cab4c8c-24ee-4e58-9079-c115dc7e7249" "6fd39d54-9614-4905-b0b1-f7c9e4eb6c1b"
-			"81ce4420-76a3-4208-a378-24da08e08c71" "9c456e21-ce67-4254-a0e1-1adb6a8cc6c5"
-			"cc35c2e6-c200-44b2-a15b-98de9d3cc82d" "f6982003-3b12-4946-8e6e-044bf2e6fc43"
-		)
-	)
-	(group ""
-		(uuid "49a3bdaa-63ca-4606-a229-a9534577f7ae")
-		(members "00eb8074-0e84-4a08-9b20-3ef2e02bb06c" "0183bce4-7594-44af-859e-5f997f7630e0"
-			"1149b188-a2f7-42f7-87cd-836b738be284" "2dd85c21-86d6-46b0-ab6b-5306b4a3ae8f"
-			"398067dc-e2c8-4dd5-9bc6-3f40231fdd79" "c675b778-d8cd-4341-b84d-e979d0fe4e13"
-		)
-	)
+	(embedded_fonts no)
 )
